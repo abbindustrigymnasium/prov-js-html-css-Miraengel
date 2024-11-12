@@ -6,12 +6,22 @@
 </head>
 
 <body>
-    <!-- Här ska din HTML kod vara -->
+    <input id="adress"> <button onClick = "showImage()">Click Here!</button>
+    <img id = "bild">
 
     <script>
-        // Här ska din JavaScript kod vara
-
-
+        function showImage() {
+            const imageUrl = document.getElementById("adress").value;
+            
+            const imageElement = document.getElementById("bild");
+            imageElement.src = imageUrl;
+            
+            if (imageUrl) {
+                imageElement.style.display = "block";
+            } else {
+                imageElement.style.display = "none";
+            }
+        }
     </script>
 </body>
 
