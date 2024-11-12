@@ -10,8 +10,14 @@
     <!-- Här ska din HTML kod vara -->
 
     <script>
-        // Här ska din JavaScript kod vara
+        let numbers = [12, 25, 37, 43, 59, 61];
 
+        function filterEvenNumbers(arr) {
+            return arr.filter(num => Number.isInteger(num / 2));
+        }
+
+        let evenNumbers = filterEvenNumbers(numbers);
+        alert(evenNumbers);
 
     </script>
 </body>
